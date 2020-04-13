@@ -12,7 +12,10 @@ public class Hotel {
     List<Room> rooms; //Rooms are not ordered: A BETTER DATA STRUCTURE WOULD BE TreeMap using http://www.sergiy.ca/guide-to-selecting-appropriate-map-collection-in-java/ GUIDE
     List<Guest> guests;
 
-    public Hotel() {
+    public static Hotel app = new Hotel("Elite Guys Hotel");
+
+    public Hotel(String name) {
+        this.name = name;
         rooms = new ArrayList<>();
         guests = new ArrayList<>();
     }
